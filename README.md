@@ -8,6 +8,9 @@
 - Deploying - Git pages
 - Routing
 
+## Week 3
+- Buttons
+
 
 # Getting Started with Create React App
 
