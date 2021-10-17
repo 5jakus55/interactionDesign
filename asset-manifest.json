@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/interactionDesign/static/css/main.a617e044.chunk.css",
+    "main.js": "/interactionDesign/static/js/main.79d74841.chunk.js",
+    "main.js.map": "/interactionDesign/static/js/main.79d74841.chunk.js.map",
+    "runtime-main.js": "/interactionDesign/static/js/runtime-main.1be7c311.js",
+    "runtime-main.js.map": "/interactionDesign/static/js/runtime-main.1be7c311.js.map",
+    "static/js/2.af150c9b.chunk.js": "/interactionDesign/static/js/2.af150c9b.chunk.js",
+    "static/js/2.af150c9b.chunk.js.map": "/interactionDesign/static/js/2.af150c9b.chunk.js.map",
+    "static/js/3.78f77210.chunk.js": "/interactionDesign/static/js/3.78f77210.chunk.js",
+    "static/js/3.78f77210.chunk.js.map": "/interactionDesign/static/js/3.78f77210.chunk.js.map",
+    "index.html": "/interactionDesign/index.html",
+    "static/css/main.a617e044.chunk.css.map": "/interactionDesign/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.af150c9b.chunk.js.LICENSE.txt": "/interactionDesign/static/js/2.af150c9b.chunk.js.LICENSE.txt",
+    "static/media/main-image.2e259c02.png": "/interactionDesign/static/media/main-image.2e259c02.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.1be7c311.js",
+    "static/js/2.af150c9b.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.79d74841.chunk.js"
+  ]
+}
