@@ -1,0 +1,31 @@
+.alertBox {
+    position: fixed;
+    width: 30%;
+    left: 32%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background: #eee;
+    border: 1px solid #aba3a3;
+  }
+  
+  .bottom {
+    bottom: 5%;
+  }
+  
+  .top {
+    top: 5%;
+  }
+  
+  .message {
+    background: #FFFFFF;
+    border: 3px solid #BAB8B8;
+  }
+  
+  .close {
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+  }

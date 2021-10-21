@@ -2,10 +2,9 @@ import React, { Component } from "react";
 import { Button } from "./index";
 
 export default {
-    title: 'Week 3/Button',
+    title: 'Week 3/Buttons',
     component: Button,
 }
 
-export const Primary = () => <Button primary>Button</Button>;
-export const ColourOne = () => <Button color="#1200ee"> Button 2 </Button>;
-export const ColourTwo = () => <Button color="#1280ee"> Button 3 </Button>;
+export const Primary = () => <Button primary color="#EFEAFC">LOG IN</Button>;
+export const ColourOne = () => <Button color="#fff">SIGN UP</Button>;

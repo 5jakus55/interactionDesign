@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import "./App.css";
-import Week1 from "./Components/week1";
-import Week2 from "./Components/week2";
-import Week3 from "./Components/week3";
+import Week1 from "./components/week1";
+import Week2 from "./components/week2/test";
+import Week3 from "./components/week3";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
@@ -35,6 +35,7 @@ const Home = () => (
       <li>
         <Link to="/week2"> Week 2</Link>
       </li>
+
       <li>
         <Link to="/week3"> Week 3</Link>
       </li>
@@ -64,5 +65,6 @@ function App() {
     </Router>
   );
 }
+
 
 export default App;

@@ -1,5 +1,9 @@
 # Interaction Design
 
+#### Hosted site: https://5jakus55.github.io/interactionDesign/
+
+#### GitHub repo: https://github.com/5jakus55
+
 ## Week 1
 - Styled Components
 - Creating a react application

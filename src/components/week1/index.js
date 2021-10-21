@@ -1,100 +1,92 @@
 import React from "react";
-import topCircles from "./assets/top-circles.png";
-import mainImage from "./assets/main-image.png";
-import welcome from "./assets/welcome.png";
-import login from "./assets/login.png";
-import signup from "./assets/signup.png";
-import createAccount from "./assets/create-account.png";
-import bottomCircle from "./assets/bottom-circle.png";
+import leftTopTriangle from "./assets/left-top-triangle.png";
+import logo from "./assets/logo.png";
+import welcomeBack from "./assets/welcome-back.png";
+import Saira from "./assets/Saira.png";
+import loading from "./assets/loading.gif";
+import rightBottomTriangle from "./assets/right-bottom-triangle.png";
 import styled from "styled-components";
 
 const OuterWrapper = styled.div`
-   background: #FAFAFA;
+   background: #FFFFFF;
    width: 200 vw;
    height: 200 vh;
 `;
 
-
-const StyledTopCircles = styled.div`
+const StyledLogo = styled.div`
+    display: flex;
+    justify-content: center;
+    text-align: center;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 60px;
+    left:45%;
 `;
 
-const StyledWrapper = styled.div`
-    display: flex;
+const StyledWelcomeBack = styled.div`
     justify-content: center;
-    text-align: center;
-    padding: 80px;
+    position: absolute;
+    top: 260px;
+    left:41%;
 `;
 
-const StyledWelcome = styled.div`
-    display: flex;
-    justify-content: center;
-    text-align: center;
+const StyledLoading = styled.div`
+justify-content: center;
+position: absolute;
+top: 320px;
+left:30%;
 `;
 
-const StyledLogin = styled.div`
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 50px;
+const StyledSaira = styled.div`
+justify-content: center;
+position: absolute;
+top: 310px;
+left:46%;
 `;
 
-const StyledSignup = styled.div`
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 15px;
-`;
-
-const StyledCreate = styled.div`
-    display: flex;
-    justify-content: center;
-    text-align: center;
+const StyledBotomTriangle = styled.div`
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
 `;
 
 const Week1 = () => (
 
     <OuterWrapper>
 
-        <StyledTopCircles>
-            <div>
-                < img src={topCircles} />
-            </div>
-        </StyledTopCircles>
 
-        <StyledWrapper>
-            <div>
-               <img src={mainImage} /> 
-            </div>
-        </StyledWrapper>
+                < img src={leftTopTriangle} />
 
-        <StyledWelcome>
-            <div>
-            <img src={welcome} />
-            </div>
-        </StyledWelcome>
 
-        <StyledLogin>
+        <StyledLogo>
             <div>
-            <img src={login} />
+               <img src={logo} /> 
             </div>
-        </StyledLogin>
+        </StyledLogo>
 
-        <StyledSignup>
+        <StyledWelcomeBack>
             <div>
-            <img src={signup} />
+            <img src={welcomeBack} />
             </div>
-        </StyledSignup>
+        </StyledWelcomeBack>
+        
+        <StyledLoading>
+            <div>
+            <img src={loading} alt="loading..." />
+            </div>
+        </StyledLoading>
 
-        <StyledCreate>
+        <StyledSaira>
             <div>
-            <img src={createAccount} />
+            <img src={Saira} />
             </div>
-        </StyledCreate>          
+        </StyledSaira>
+
+        <StyledBotomTriangle>
+            <div>
+            <img src={rightBottomTriangle} />
+            </div>
+        </StyledBotomTriangle>          
             
-        <img src={bottomCircle} />
     </OuterWrapper>
 )
 
