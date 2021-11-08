@@ -3,8 +3,13 @@ import styled from "styled-components";
 import logo from "./assets/logo-luna.png";
 import rock from "./assets/rock.png";
 import login from "./assets/login.png";
-import show from "./assets/show.svg";
-import hide from "./assets/hide.svg";
+import show from "./assets/show.png";
+import hide from "./assets/hide.png";
+import menu from "./assets/menu.png";
+import objects from "./assets/3d-objects.png";
+import heading from "./assets/Heading.png";
+import rightRectangle from "./assets/right-rectangle.png";
+import underText from "./assets/under-text.png";
 import tickButton from "./assets/tick-button.png";
 import tickButton2 from "./assets/tick-button-2.png";
 
@@ -17,6 +22,10 @@ const schema = yup.object().shape({
   password: yup.string().required("Password is required"),
 });
 
+const StyledOuterWrapper = styled.div`
+background: #FBF8F8;
+`;
+
 const StyledWrapper = styled.div`
 display: flex;
 align-items: center;
@@ -27,30 +36,54 @@ height: 100vh;
 
 const StyledLogo = styled.div`
 position: absolute;
-top: 20px;
+top: 5px;
 left: 20px;
 `;
 
 const StyledMenu = styled.ul`
-list-style-type: none;
-float: left;
-display: block;
-text-decoration: none;
-font-family: Lato;
-font-size: 24px;
-color: #0D1B2A;
+position: absolute;
+top: 25px;
+left: 150px;
+`;
+
+const StyledTitle = styled.div`
+position: absolute;
+top: 180px;
+left: 190px;
+`;
+
+const StyledText = styled.div`
+position: absolute;
+top: 430px;
+left: 190px;
+`;
+
+const StyledRectangle = styled.div`
+position: absolute;
+top: 0px;
+right: 0px;
+`;
+
+const StyledObjects = styled.div`
+position: absolute;
+top: 0px;
+right: 50px;
 `;
 
 const StyledLogin = styled.div`
 display: flex;
 text-align: center;
 justify-content: center;
+margin-bottom: 150px;
+position: absolute;
+top: 20vh;
+left: 93vh;
 `;
 
 const StyledRock = styled.div`
 position:absolute;
 bottom: 0%;
-right;
+right:0%;
 `;
 
 const StyledInput = styled.input`
@@ -66,10 +99,10 @@ const StyledInput = styled.input`
 `;
 
 const StyledIcon = styled.img`
-  width: 26px;
+  width: 27px;
   height: 24px;
-  margin-left: -80px;
-  margin-bottom: -10px;
+  margin-left: -50px;
+  margin-bottom: -6px;
 `;
 
 const StyledErrorText = styled.p`
@@ -79,24 +112,66 @@ const StyledErrorText = styled.p`
 const StyledButton = styled.button`
   height: 63px;
   width: 225px;
+  justify-content: center;
   background: #415A77;
   color: #ffff;
   text-align: center;
   font-size: 24px;
   border: 2px solid #415A77;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 85px;
+  margin-top: 50px;
+  &:hover {
+    background: #0D1B2A;
+  }
+`;
+
+const StyledButton2 = styled.button`
+  height: 63px;
+  width: 225px;
+  justify-content: center;
+  margin-left: 190px;
+  margin-top: 600px;
+  background: #415A77;
+  color: #ffff;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid #415A77;
+  border-radius: 5px;
   cursor: pointer;
   &:hover {
-    background: #FFFFFF;
+    background: #0D1B2A;
+  }
+`;
+
+const StyledButton3 = styled.button`
+  height: 63px;
+  width: 225px;
+  justify-content: center;
+  margin-left: 100px;
+  margin-top: 600px;
+  background: #ffff;
+  color: #415A77;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid #415A77;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background: #E6FAFC;
   }
 `;
 
 const Week4 = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [showLoginForm, setShowLoginForm] = useState(false);
+  const [showMainPage, setMainPage] = useState(true);
 
-  const { register, handleSubmit, watch, errors } = useForm({
+  const { register, handleSubmit, formState: { errors },watch} = useForm({
     resolver: yupResolver(schema),
-  });
+    });
   const onSubmit = (data) => {
     setSubmitted(true);
     console.log(data);
@@ -106,29 +181,55 @@ const Week4 = () => {
     setShowPassword(!showPassword);
   };
 
+  const handleFormClick = (e) => {
+    setMainPage(!showMainPage);
+    setShowLoginForm(showLoginForm);
+  };
+
   return (
-    <StyledWrapper>
-        <StyledLogo>
+    <StyledOuterWrapper>
+              <StyledLogo>
            <img src={logo} />
         </StyledLogo>
-      <StyledMenu>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">How It Works</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-      </StyledMenu>
-      <StyledLogin> 
-      <img src={login} />
-      </StyledLogin>
-      <StyledRock> <img src={rock} /></StyledRock>
+
+        <StyledMenu>
+        <img src={menu} />
+        </StyledMenu>
+        {( showMainPage && !showLoginForm) && (
+        <form>
+        <StyledTitle>
+        <img src={heading} />
+        </StyledTitle>
+
+        <StyledText>
+        <img src={underText} />
+        </StyledText>
+
+        <StyledRectangle>
+        <img src={rightRectangle} />
+        </StyledRectangle>
+
+        <StyledObjects>
+        <img src={objects} />
+        </StyledObjects>
+
+        <StyledButton2 onClick={handleFormClick}> LOG IN </StyledButton2>
+        <StyledButton3> SIGN UP </StyledButton3>
+        </form>
+        )
+        };
+
+
+
+    <StyledWrapper>
 
       {submitted && <h1> You're all done</h1>}
-      {!submitted && (
+      {(!submitted && showLoginForm) && (
       
       <form onSubmit={handleSubmit(onSubmit)}>
+            <StyledLogin> 
+      <img src={login} />
+      </StyledLogin>
         <p>
           <StyledInput
             type="text"
@@ -138,7 +239,7 @@ const Week4 = () => {
           />
         </p>
         <StyledErrorText> {errors.email?.message}</StyledErrorText>
-
+        <p> <StyledRock> <img src={rock} /></StyledRock> </p>
         <p>
           <StyledInput
             type={showPassword ? "text" : "password"}
@@ -149,7 +250,7 @@ const Week4 = () => {
           <StyledIcon
             src={showPassword ? hide : show}
             onClick={handleClick}
-          ></StyledIcon>
+            ></StyledIcon>
           <StyledErrorText> {errors.password?.message}</StyledErrorText>
         </p>
         <p>
@@ -157,6 +258,7 @@ const Week4 = () => {
         </p>
       </form>)}
     </StyledWrapper>
+    </StyledOuterWrapper>
   );
 };
 
