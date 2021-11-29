@@ -1,97 +1,100 @@
-import React, { useState } from 'react';
-import styled from 'styled-components';
-import closeIcon from "./assets/closeIcon.svg";
-import { Button } from "../week3/index";
-import { Swipeable } from 'react-swipeable';
+import React, { useState } from "react";
+import styled from "styled-components";
+import { MdDisabledByDefault } from "react-icons/md";
+import { MdNotes } from "react-icons/md";
+import { Button } from "../week4/index";
+import { Swipeable } from "react-swipeable";
 
 const StyledWrapper = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+`;
+
+const StyledOpenNav = styled.img`
+  float: left;
+  width: 25px;
+  height: 25px;
+  fill: black;
+  margin: 1rem 1rem;
+  cursor: pointer;
 `;
 
 const StyledSideNav = styled.div`
-    height: 100vh;
-    width: ${(props) => props.open ? '250px' : '0px'};
-    transition: 1s;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #111;
+  height: 100vh;
+  width: ${(props) => (props.open ? "250px" : "0px")};
+  transition: 1s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #111;
 `;
 
 const StyledCloseIcon = styled.img`
-    float: right;
-    width: 25px;
-    height: 25px;
-    fill: white;
-    margin: 1rem 1rem;
-    cursor: pointer;
+  float: right;
+  width: 25px;
+  height: 25px;
+  fill: white;
+  margin: 1rem 1rem;
+  cursor: pointer;
 `;
 
 const StyledNav = styled.ul`
-   
-    display: flex;
-    color: white;
-    flex-direction: column;
-    & li {
-        text-align: center;
-        list-style: none;
-        margin-top: 4rem;
-        cursor: pointer;
-        &:hover {
-            color: grey;
-        }
-    }`;
-
+  display: flex;
+  color: white;
+  flex-direction: column;
+  & li {
+    text-align: center;
+    list-style: none;
+    margin-top: 4rem;
+    cursor: pointer;
+    &:hover {
+      color: grey;
+    }
+  }
+`;
 
 const Week5 = () => {
+  const [navOpen, setNavOpen] = useState(false);
 
-    const [navOpen, setNavOpen] = useState(false);
+  const handleClose = () => {
+    setNavOpen(false);
+  };
+  const handleOpen = () => {
+    setNavOpen(true);
+  };
 
-    const handleClose = () => {
-        setNavOpen(false);
-    }
-    const handleOpen = () => {
-        setNavOpen(true);
-    }
-
-    const handleSwipe = (event) => {
-
-
-        if (event.dir === "Right") {
-            setNavOpen(true);
-        }
-
-        if (event.dir === "Left") {
-            setNavOpen(false);
-        }
+  const handleSwipe = (event) => {
+    if (event.dir === "Right") {
+      setNavOpen(true);
     }
 
+    if (event.dir === "Left") {
+      setNavOpen(false);
+    }
+  };
 
+  return (
+    <>
+      <Swipeable onSwiped={handleSwipe}>
+        <StyledWrapper>
+          <StyledSideNav open={navOpen}>
+            <StyledCloseIcon onClick={handleClose} src={MdDisabledByDefault} />
+            {navOpen && (
+              <StyledNav>
+                <li>Home</li>
+                <li>About</li>
+                <li>Privacy</li>
+              </StyledNav>
+            )}
+          </StyledSideNav>
 
-    return (<>
-        <Swipeable onSwiped={handleSwipe}>
-            <StyledWrapper>
-                <StyledSideNav open={navOpen}>
-                    <StyledCloseIcon onClick={handleClose} src={closeIcon} />
-                    {
-                        navOpen &&
-                        (<StyledNav>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Privacy</li>
-                        </StyledNav>)
-                    }
-                </StyledSideNav>
-
-                <Button onClick={handleOpen} color="#1200ee"> Open Nav </Button>
-            </StyledWrapper>
-        </Swipeable>
+          <StyledOpenNav onClick={handleOpen} src={MdNotes} />
+        </StyledWrapper>
+      </Swipeable>
     </>
+  );
+};
 
-    )
-}
-
-export default Week5; 
+export default Week5;

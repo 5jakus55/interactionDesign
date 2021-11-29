@@ -6,7 +6,6 @@ import Week2 from "./components/week2/test";
 import Week3 from "./components/week3";
 import Week4 from "./components/week4";
 import Week5 from "./components/week5";
-
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const StyledNav = styled.ul`
@@ -49,9 +48,6 @@ const Home = () => (
       <li>
         <Link to="/week5"> Week 5</Link>
       </li>
-
-
-
     </StyledNav>
   </nav>
 );
@@ -82,6 +78,5 @@ function App() {
     </Router>
   );
 }
-
 
 export default App;
