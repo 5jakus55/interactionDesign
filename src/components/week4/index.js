@@ -183,7 +183,7 @@ const Week4 = () => {
 
   const handleFormClick = (e) => {
     setMainPage(!showMainPage);
-    setShowLoginForm(showLoginForm);
+    setShowLoginForm(!showLoginForm);
   };
 
   return (
@@ -233,9 +233,8 @@ const Week4 = () => {
         <p>
           <StyledInput
             type="text"
-            name="email"
             placeholder="Email"
-            ref={register()}
+            {...register('email')}
           />
         </p>
         <StyledErrorText> {errors.email?.message}</StyledErrorText>
@@ -243,9 +242,8 @@ const Week4 = () => {
         <p>
           <StyledInput
             type={showPassword ? "text" : "password"}
-            name="password"
             placeholder="Password"
-            ref={register()}
+            {...register('password')}
           />
           <StyledIcon
             src={showPassword ? hide : show}
