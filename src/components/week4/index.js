@@ -75,9 +75,6 @@ const StyledLogin = styled.div`
   text-align: center;
   justify-content: center;
   margin-bottom: 150px;
-  position: absolute;
-  top: 20vh;
-  left: 93vh;
 `;
 
 const StyledRock = styled.div`
@@ -237,13 +234,6 @@ const Week4 = () => {
               />
             </p>
             <StyledErrorText> {errors.email?.message}</StyledErrorText>
-            <p>
-              {" "}
-              <StyledRock>
-                {" "}
-                <img src={rock} />
-              </StyledRock>{" "}
-            </p>
             <p>
               <StyledInput
                 type={showPassword ? "text" : "password"}
