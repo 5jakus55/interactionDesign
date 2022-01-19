@@ -6,6 +6,9 @@ import Week2 from "./components/week2/test";
 import Week3 from "./components/week3";
 import Week4 from "./components/week4";
 import Week5 from "./components/week5";
+import Week6 from "./components/week6/index";
+import Week7 from "./components/week7";
+import Week8 from "./components/week8";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const StyledNav = styled.ul`
@@ -48,6 +51,15 @@ const Home = () => (
       <li>
         <Link to="/week5"> Week 5</Link>
       </li>
+      <li>
+        <Link to="/week6"> Week 6</Link>
+      </li>
+      <li>
+        <Link to="/week7"> Week 7</Link>
+      </li>
+      <li>
+        <Link to="/week8"> Week 8</Link>
+      </li>
     </StyledNav>
   </nav>
 );
@@ -70,6 +82,15 @@ function App() {
         </Route>
         <Route path="/week5">
           <Week5 />
+        </Route>
+        <Route path="/week6">
+          <Week6 />
+        </Route>
+        <Route path="/week7">
+          <Week7 />
+        </Route>
+        <Route path="/week8">
+          <Week8 />
         </Route>
         <Route path="/">
           <Home />

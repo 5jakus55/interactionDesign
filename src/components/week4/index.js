@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import logo from "./assets/logo-luna.png";
-import rock from "./assets/rock.png";
+import rock from "./assets/Rock.png";
 import login from "./assets/login.png";
-import show from "./assets/show.png";
-import hide from "./assets/hide.png";
+import show from "./assets/show.svg";
+import hide from "./assets/hide.svg";
 import menu from "./assets/menu.png";
 import objects from "./assets/3d-objects.png";
 import heading from "./assets/Heading.png";
@@ -54,7 +54,7 @@ const StyledTitle = styled.div`
 
 const StyledText = styled.div`
   position: absolute;
-  top: 430px;
+  top: 420px;
   left: 190px;
 `;
 
@@ -74,7 +74,7 @@ const StyledLogin = styled.div`
   display: flex;
   text-align: center;
   justify-content: center;
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 `;
 
 const StyledRock = styled.div`
@@ -86,29 +86,30 @@ const StyledRock = styled.div`
 const StyledInput = styled.input`
   background: #ffffff;
   border: 1px solid #0d1b2a;
-  height: 45px;
+  height: 40px;
   width: 390px;
   border-radius: 4px;
   padding-left: 10px;
   font-size: 18px;
   font-family: Lato;
   color: #0d1b2a;
+  margin-bottom: 40px;
 `;
 
 const StyledIcon = styled.img`
-  width: 27px;
-  height: 24px;
-  margin-left: -50px;
-  margin-bottom: -6px;
+  position: absolute;
+  top: 440px;
+  left: 880px;
 `;
 
 const StyledErrorText = styled.p`
   color: #f1a208;
+  margin-top: -20px;
 `;
 
 const StyledButton = styled.button`
   height: 63px;
-  width: 225px;
+  width: 221px;
   justify-content: center;
   background: #415a77;
   color: #ffff;
@@ -121,37 +122,39 @@ const StyledButton = styled.button`
   margin-top: 50px;
   &:hover {
     background: #0d1b2a;
+    border: 2px solid #0d1b2a;
   }
 `;
 
 const StyledButton2 = styled.button`
-  height: 63px;
-  width: 225px;
+  height: 52px;
+  width: 180px;
   justify-content: center;
   margin-left: 190px;
   margin-top: 600px;
   background: #415a77;
   color: #ffff;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   border: 2px solid #415a77;
   border-radius: 5px;
   cursor: pointer;
   &:hover {
     background: #0d1b2a;
+    border: 2px solid #0d1b2a;
   }
 `;
 
 const StyledButton3 = styled.button`
-  height: 63px;
-  width: 225px;
+  height: 52px;
+  width: 180px;
   justify-content: center;
-  margin-left: 100px;
+  margin-left: 60px;
   margin-top: 600px;
   background: #ffff;
   color: #415a77;
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   border: 2px solid #415a77;
   border-radius: 5px;
   cursor: pointer;
@@ -249,6 +252,9 @@ const Week4 = () => {
             <p>
               <StyledButton> Login </StyledButton>
             </p>
+            <StyledRock>
+              <img src={rock} />
+            </StyledRock>
           </form>
         )}
       </StyledWrapper>

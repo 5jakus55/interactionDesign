@@ -1,0 +1,136 @@
+.pages {
+  color: #ff7f11;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 10%;
+}
+.navbar {
+  background-color: #364156;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0px;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 1500px;
+}
+
+.nav-logo {
+  align-items: center;
+  margin-left: 30px;
+  margin-top: 5px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 0rem;
+  margin-top: 32px;
+}
+
+.nav-links {
+  color: #f7f7ff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-item {
+  line-height: 10px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 120%;
+  background: #ff7f11;
+}
+
+.nav-item .active {
+  color: #ff7f11;
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1pxsolid #fff;
+    position: absolute;
+    top: 5vh;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-logo {
+    margin-top: 10px;
+  }
+
+  .nav-menu.active {
+    background: #364156;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item .active {
+    color: #ff7f11;
+    border: none;
+  }
+  .nav-links {
+    width: 100%;
+    display: table;
+  }
+
+  .nav-item {
+    line-height: 2px;
+    justify-content: center;
+    margin-right: 100px;
+    padding: 1rem;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 2rem;
+    cursor: pointer;
+    color: #f7f7ff;
+  }
+}

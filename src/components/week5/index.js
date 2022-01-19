@@ -1,4 +1,5 @@
 import React, { Component, useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { MenuItems } from "./menuItems";
 import logo from "./assets/logo.png";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
@@ -18,10 +19,9 @@ class Week5 extends Component {
           <img src={logo} />
         </div>
         <div className="menu-icon" onClick={this.handleClick}>
-          <i
-            className={this.state.clicked ? <CgClose /> : <HiOutlineMenuAlt3 />}
-          ></i>
+          {this.state.clicked ? <CgClose /> : <HiOutlineMenuAlt3 />}
         </div>
+
         <ul className={this.state.clicked ? "nav-menu active" : "nav-menu"}>
           {MenuItems.map((item, index) => {
             return (
