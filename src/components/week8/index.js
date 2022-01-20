@@ -23,24 +23,25 @@ const StyledWrapper = styled.div`
 
 const StyledButton = styled.div`
   border-radius: 15px;
-  border: 1px solid #00b6a0;
+  border: 1px solid ${({ active }) => (active ? "#E5E5E5" : "#00B6A0")};
   height: 20px;
   width: 36px;
   transition: background-color: 0.2s;
-  background-color: #9AE9DF;
+  background-color: ${({ active }) => (active ? "#A1A1A1" : "#9AE9DF")};
 `;
 
 const StyledSwitch = styled.div`
   border-radius: 10px;
   animation: ${time}
     ${({ active }) =>
-      active && setAnimation({ marginLeft: 0 }, { marginLeft: "17px" })}
+      active
+        ? setAnimation({ marginLeft: "1px" }, { marginLeft: "17px" })
+        : setAnimation({ marginLeft: "17px" }, { marginLeft: "1px" })}
     linear;
   animation-fill-mode: forwards;
   height: 18px;
   width: 18px;
   margin: 1px;
-  background-color: #fff;
 `;
 
 const Toggle = (props) => {
@@ -59,9 +60,15 @@ const Toggle = (props) => {
   const handleClick = () => setActive(!active);
 
   return (
-    <StyledButton>
+    <StyledButton active={active}>
       {" "}
-      <StyledSwitch active={active} onClick={handleClick} />{" "}
+      <StyledSwitch active={active} onClick={handleClick}>
+        {active ? (
+          <img alt="nightSwitch" src={nightSwitch} />
+        ) : (
+          <img alt="daySwitch" src={daySwitch} />
+        )}
+      </StyledSwitch>
     </StyledButton>
   );
 };
