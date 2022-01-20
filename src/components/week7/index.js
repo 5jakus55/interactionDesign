@@ -19,21 +19,21 @@ const OuterWrapper = styled.div`
 const StyledLogo = styled.div`
   text-align: center;
   position: absolute;
-  top: 80px;
+  top: 50px;
   left: 685px;
 `;
 
 const StyledTitle = styled.div`
   justify-content: center;
   position: absolute;
-  top: 200px;
+  top: 150px;
   left: 622px;
 `;
 
 const StyledBanks = styled.div`
   justify-content: center;
   position: absolute;
-  top: 380px;
+  top: 340px;
   left: 540px;
 `;
 
@@ -46,7 +46,7 @@ const StyledLoader = styled.div`
 const StyledSignup = styled.div`
   justify-content: center;
   position: absolute;
-  top: 750px;
+  top: 720px;
   left: 720px;
 `;
 const StyledBlurryS = styled.div`
@@ -66,7 +66,7 @@ const StyledButton = styled.button`
   width: 150px;
   justify-content: center;
   position: absolute;
-  top: 660px;
+  top: 630px;
   left: 680px;
   background: #415a77;
   color: #fff;

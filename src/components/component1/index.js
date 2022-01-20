@@ -93,18 +93,16 @@ const StyledInput = styled.input`
   font-size: 18px;
   font-family: Lato;
   color: #0d1b2a;
-  margin-bottom: 50px;
+  margin-bottom: 10px;
 `;
 
 const StyledIcon = styled.img`
-  position: absolute;
-  top: 435px;
-  left: 880px;
+  display: flex;
+  justify-content: center;
 `;
 
 const StyledErrorText = styled.p`
   color: #f1a208;
-  margin-top: -20px;
 `;
 
 const StyledButton = styled.button`

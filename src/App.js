@@ -5,7 +5,7 @@ import Component1 from "./components/component1";
 import Week6 from "./components/week6/index";
 import Week7 from "./components/week7";
 import Week8 from "./components/week8";
-import Week9 from "./components/week9/index";
+import Week9 from "./components/week9";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 const StyledNav = styled.ul`
