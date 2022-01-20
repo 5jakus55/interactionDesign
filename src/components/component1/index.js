@@ -93,12 +93,12 @@ const StyledInput = styled.input`
   font-size: 18px;
   font-family: Lato;
   color: #0d1b2a;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 `;
 
 const StyledIcon = styled.img`
   position: absolute;
-  top: 440px;
+  top: 435px;
   left: 880px;
 `;
 
@@ -163,7 +163,7 @@ const StyledButton3 = styled.button`
   }
 `;
 
-const Week4 = () => {
+const Component1 = () => {
   const [showPassword, setShowPassword] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [showLoginForm, setShowLoginForm] = useState(false);
@@ -262,4 +262,4 @@ const Week4 = () => {
   );
 };
 
-export default Week4;
+export default Component1;

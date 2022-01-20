@@ -37,21 +37,23 @@
   display: flex;
   list-style: none;
   text-align: center;
-  margin-right: 0rem;
-  margin-top: 32px;
+  margin-right: 2rem;
+  margin-top: 25px;
 }
 
 .nav-links {
   color: #f7f7ff;
+  font-size: 20px;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   height: 100%;
   border-bottom: 3px solid transparent;
 }
 
 .nav-item {
-  line-height: 10px;
+  line-height: 30px;
   margin-right: 1rem;
+  margin-left: 30px;
 }
 
 .nav-item:after {
@@ -64,7 +66,7 @@
 }
 
 .nav-item:hover:after {
-  width: 120%;
+  width: 105%;
   background: #ff7f11;
 }
 
@@ -112,15 +114,21 @@
     border: none;
   }
   .nav-links {
+    font-size: 24px;
     width: 100%;
     display: table;
   }
 
   .nav-item {
-    line-height: 2px;
+    line-height: 5px;
     justify-content: center;
     margin-right: 100px;
     padding: 1rem;
+  }
+
+  .nav-item:hover:after {
+    width: 100%;
+    background: #ff7f11;
   }
 
   .nav-icon {

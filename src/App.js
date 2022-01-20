@@ -1,11 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import "./App.css";
-import Week1 from "./components/week1";
-import Week2 from "./components/week2/test";
-import Week3 from "./components/week3";
-import Week4 from "./components/week4";
-import Week5 from "./components/week5";
+import Component1 from "./components/component1";
 import Week6 from "./components/week6/index";
 import Week7 from "./components/week7";
 import Week8 from "./components/week8";
@@ -18,51 +14,42 @@ const StyledNav = styled.ul`
   height: 200px;
   padding: 90px;
   box-shadow: 5px 5px 5px rgba(68, 68, 68, 0.7);
-  width: 100px;
+  width: 200px;
   li {
     list-style: none;
     margin-right: 2%;
+    margin-top: 18px;
+    text-align: center;
+    justify-content: center;
+    font-size: 20px;
   }
+  background-color: #bdd5ea;
+  border-radius: 20px;
 `;
 
 const StyledHeader = styled.h1`
   text-align: center;
+  margin-top: 100px;
 `;
 
 const Home = () => (
   <nav>
-    <StyledHeader> Welcome to Interaction Design!</StyledHeader>
+    <StyledHeader> Welcome to Interaction Design Assessment!</StyledHeader>
     <StyledNav>
       <li>
-        <Link to="/week1"> Week 1</Link>
-      </li>
-
-      <li>
-        <Link to="/week2"> Week 2</Link>
-      </li>
-
-      <li>
-        <Link to="/week3"> Week 3</Link>
-      </li>
-
-      <li>
-        <Link to="/week4"> Week 4</Link>
-      </li>
-
-      <li>
-        <Link to="/week5"> Week 5</Link>
+        <Link to="/component1"> Login Form </Link>
       </li>
       <li>
-        <Link to="/week6"> Week 6</Link>
+        <Link to="/week6"> Menu </Link>
       </li>
       <li>
-        <Link to="/week7"> Week 7</Link>
+        <Link to="/week7"> Loader Page </Link>
       </li>
       <li>
-        <Link to="/week8"> Week 8</Link>
+        <Link to="/week8"> Toggle </Link>
       </li>
       <li>
-        <Link to="/week9"> Week 9</Link>
+        <Link to="/week9"> Modal </Link>
       </li>
     </StyledNav>
   </nav>
@@ -72,20 +59,8 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/week1">
-          <Week1 />
-        </Route>
-        <Route path="/week2">
-          <Week2 />
-        </Route>
-        <Route path="/week3">
-          <Week3 />
-        </Route>
-        <Route path="/week4">
-          <Week4 />
-        </Route>
-        <Route path="/week5">
-          <Week5 />
+        <Route path="/component1">
+          <Component1 />
         </Route>
         <Route path="/week6">
           <Week6 />
