@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useState, useEffect, useRef } from "react";
 import banks from "./assets/banks.png";
 import logo from "./assets/logo-beats.png";
 import blurryM from "./assets/blurry-background-m.png";
 import blurryS from "./assets/blurry-background-s.png";
-import loader from "./assets/loader.gif";
+import loader from "./assets/loader1.gif";
 import title from "./assets/title.png";
 import signup from "./assets/signup-button.png";
 import styled from "styled-components";
@@ -12,11 +12,11 @@ const OuterWrapper = styled.div`
   background: #ffffff;
   width: 200 vw;
   height: 200 vh;
+  display: flex;
+  justify-content: center;
 `;
 
 const StyledLogo = styled.div`
-  display: flex;
-  justify-content: center;
   text-align: center;
   position: absolute;
   top: 80px;
@@ -40,6 +40,7 @@ const StyledBanks = styled.div`
 const StyledLoader = styled.div`
   display: flex;
   justify-content: center;
+  margin-top: 35vh;
 `;
 
 const StyledSignup = styled.div`
@@ -81,6 +82,29 @@ const StyledButton = styled.button`
 `;
 
 const Week7 = () => {
+  const [isLoading, setIsLoading] = React.useState(false);
+
+  const timeout = React.useRef();
+
+  React.useEffect(() => {
+    setIsLoading(true);
+    timeout.current = setTimeout(() => {
+      setIsLoading(false);
+      clearTimeout(timeout.current);
+    }, 3000);
+    return () => {
+      setIsLoading(false);
+      clearTimeout(timeout.current);
+    };
+  }, []);
+
+  if (isLoading) {
+    return (
+      <StyledLoader>
+        <img src={loader} />
+      </StyledLoader>
+    );
+  }
   return (
     <OuterWrapper>
       <StyledBlurryS>
