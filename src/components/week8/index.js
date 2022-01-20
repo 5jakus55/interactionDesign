@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
+import daySwitch from "./assets/icon-switch-1.svg";
+import nightSwitch from "./assets/icon-switch-2.svg";
 
 const time = "0.5s";
 const blackBackground = "#000000";
@@ -22,10 +24,10 @@ const StyledWrapper = styled.div`
 const StyledButton = styled.div`
   border-radius: 15px;
   border: 1px solid #00b6a0;
-  background-color: #9ae9df;
-  color: #9ae9df;
   height: 20px;
   width: 36px;
+  transition: background-color: 0.2s;
+  background-color: #9AE9DF;
 `;
 
 const StyledSwitch = styled.div`
