@@ -1,28 +1,34 @@
 {
   "files": {
-    "main.css": "/interactionDesign/static/css/main.1b463ef8.chunk.css",
-    "main.js": "/interactionDesign/static/js/main.44d186e4.chunk.js",
-    "main.js.map": "/interactionDesign/static/js/main.44d186e4.chunk.js.map",
-    "runtime-main.js": "/interactionDesign/static/js/runtime-main.b5a98928.js",
-    "runtime-main.js.map": "/interactionDesign/static/js/runtime-main.b5a98928.js.map",
-    "static/js/2.01a9e930.chunk.js": "/interactionDesign/static/js/2.01a9e930.chunk.js",
-    "static/js/2.01a9e930.chunk.js.map": "/interactionDesign/static/js/2.01a9e930.chunk.js.map",
-    "static/js/3.3f355113.chunk.js": "/interactionDesign/static/js/3.3f355113.chunk.js",
-    "static/js/3.3f355113.chunk.js.map": "/interactionDesign/static/js/3.3f355113.chunk.js.map",
+    "main.css": "/interactionDesign/static/css/main.eb3ca5d2.chunk.css",
+    "main.js": "/interactionDesign/static/js/main.ee359ff2.chunk.js",
+    "main.js.map": "/interactionDesign/static/js/main.ee359ff2.chunk.js.map",
+    "runtime-main.js": "/interactionDesign/static/js/runtime-main.1ba68642.js",
+    "runtime-main.js.map": "/interactionDesign/static/js/runtime-main.1ba68642.js.map",
+    "static/js/2.1ea5c789.chunk.js": "/interactionDesign/static/js/2.1ea5c789.chunk.js",
+    "static/js/2.1ea5c789.chunk.js.map": "/interactionDesign/static/js/2.1ea5c789.chunk.js.map",
+    "static/js/3.55bc20ae.chunk.js": "/interactionDesign/static/js/3.55bc20ae.chunk.js",
+    "static/js/3.55bc20ae.chunk.js.map": "/interactionDesign/static/js/3.55bc20ae.chunk.js.map",
     "index.html": "/interactionDesign/index.html",
-    "static/css/main.1b463ef8.chunk.css.map": "/interactionDesign/static/css/main.1b463ef8.chunk.css.map",
-    "static/js/2.01a9e930.chunk.js.LICENSE.txt": "/interactionDesign/static/js/2.01a9e930.chunk.js.LICENSE.txt",
+    "static/css/main.eb3ca5d2.chunk.css.map": "/interactionDesign/static/css/main.eb3ca5d2.chunk.css.map",
+    "static/js/2.1ea5c789.chunk.js.LICENSE.txt": "/interactionDesign/static/js/2.1ea5c789.chunk.js.LICENSE.txt",
     "static/media/3d-objects.93019255.png": "/interactionDesign/static/media/3d-objects.93019255.png",
     "static/media/Heading.3006a8d9.png": "/interactionDesign/static/media/Heading.3006a8d9.png",
-    "static/media/loading.8ec2db7b.gif": "/interactionDesign/static/media/loading.8ec2db7b.gif",
-    "static/media/main-image.2e259c02.png": "/interactionDesign/static/media/main-image.2e259c02.png",
-    "static/media/rock.c8b0d4b8.png": "/interactionDesign/static/media/rock.c8b0d4b8.png",
-    "static/media/welcome-back.fe0b35be.png": "/interactionDesign/static/media/welcome-back.fe0b35be.png"
+    "static/media/Rock.ef266fbd.png": "/interactionDesign/static/media/Rock.ef266fbd.png",
+    "static/media/banks.55e3140b.png": "/interactionDesign/static/media/banks.55e3140b.png",
+    "static/media/blurry-background-m.c4f05290.png": "/interactionDesign/static/media/blurry-background-m.c4f05290.png",
+    "static/media/blurry-background-s.fdb28930.png": "/interactionDesign/static/media/blurry-background-s.fdb28930.png",
+    "static/media/hide.731ad795.svg": "/interactionDesign/static/media/hide.731ad795.svg",
+    "static/media/icon-switch-1.1aa72448.svg": "/interactionDesign/static/media/icon-switch-1.1aa72448.svg",
+    "static/media/icon-switch-2.eed79fb1.svg": "/interactionDesign/static/media/icon-switch-2.eed79fb1.svg",
+    "static/media/loader1.f1fe780d.gif": "/interactionDesign/static/media/loader1.f1fe780d.gif",
+    "static/media/show.66307e5f.svg": "/interactionDesign/static/media/show.66307e5f.svg",
+    "static/media/silver2.9eb59408.png": "/interactionDesign/static/media/silver2.9eb59408.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.b5a98928.js",
-    "static/js/2.01a9e930.chunk.js",
-    "static/css/main.1b463ef8.chunk.css",
-    "static/js/main.44d186e4.chunk.js"
+    "static/js/runtime-main.1ba68642.js",
+    "static/js/2.1ea5c789.chunk.js",
+    "static/css/main.eb3ca5d2.chunk.css",
+    "static/js/main.ee359ff2.chunk.js"
   ]
 }
