@@ -92,7 +92,7 @@
     border-top: 1pxsolid #fff;
     position: absolute;
     top: 5vh;
-    left: -110%;
+    left: -80%;
     opacity: 1;
     transition: all 0.5s ease;
   }
@@ -122,13 +122,8 @@
   .nav-item {
     line-height: 5px;
     justify-content: center;
-    margin-right: 100px;
+    margin-right: 112px;
     padding: 1rem;
-  }
-
-  .nav-item:hover:after {
-    width: 100%;
-    background: #ff7f11;
   }
 
   .nav-icon {
