@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/interactionDesign/static/css/main.eb3ca5d2.chunk.css",
+    "main.css": "/interactionDesign/static/css/main.97265fd2.chunk.css",
     "main.js": "/interactionDesign/static/js/main.4fb8d2a9.chunk.js",
     "main.js.map": "/interactionDesign/static/js/main.4fb8d2a9.chunk.js.map",
     "runtime-main.js": "/interactionDesign/static/js/runtime-main.1ba68642.js",
@@ -10,7 +10,7 @@
     "static/js/3.55bc20ae.chunk.js": "/interactionDesign/static/js/3.55bc20ae.chunk.js",
     "static/js/3.55bc20ae.chunk.js.map": "/interactionDesign/static/js/3.55bc20ae.chunk.js.map",
     "index.html": "/interactionDesign/index.html",
-    "static/css/main.eb3ca5d2.chunk.css.map": "/interactionDesign/static/css/main.eb3ca5d2.chunk.css.map",
+    "static/css/main.97265fd2.chunk.css.map": "/interactionDesign/static/css/main.97265fd2.chunk.css.map",
     "static/js/2.1ea5c789.chunk.js.LICENSE.txt": "/interactionDesign/static/js/2.1ea5c789.chunk.js.LICENSE.txt",
     "static/media/3d-objects.93019255.png": "/interactionDesign/static/media/3d-objects.93019255.png",
     "static/media/Heading.3006a8d9.png": "/interactionDesign/static/media/Heading.3006a8d9.png",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.1ba68642.js",
     "static/js/2.1ea5c789.chunk.js",
-    "static/css/main.eb3ca5d2.chunk.css",
+    "static/css/main.97265fd2.chunk.css",
     "static/js/main.4fb8d2a9.chunk.js"
   ]
 }
